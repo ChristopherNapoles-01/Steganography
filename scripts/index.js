@@ -3,12 +3,12 @@ var show;
 var word;
 var temp,temp2;
 var key;
-var base = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz`~!@#$%^&*()-_=+[]{}\|;:',.<>/?Ññ";
+var base = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz`~!@#$%^&*()-_=+[]{}\"\\|;:',.<>/?Ññ’“”";
 var base1 = base.split('');
 var base2 = [6,8,19,22,18,21,7,20,23,12,13,11,9,2,0,1,10,24,27,26,16,17,
     14,15,25,30,31,29,28,35,34,33,3,4,32,5,36,58, 85, 79, 87, 46, 67, 78, 80, 44, 38, 63, 
     53, 41, 49, 52, 72, 47, 40, 48, 60, 39, 82, 76, 83, 45, 43, 50, 73, 84, 77, 54, 94, 66, 81, 74, 86, 61, 68, 88, 57, 
-    59, 71, 64, 62, 89, 70, 92, 69, 75, 51, 90, 65, 56, 91, 93, 55, 37, 42];
+    59, 71, 64, 62, 89, 70, 92, 69, 75, 51, 90, 65, 56, 91, 93, 55, 37 ,95, 42, 96,97,99,98];
 var wordIndex = [];
 var wordSize,keySize;
 var i;
@@ -20,6 +20,8 @@ var encrypted,sourced;
 function getWord(input) {
     word = document.getElementById("word").value
     wordSize = word.length;
+    temp = word.replace(/(\r\n|\n|\r)/gm, "");
+    word=temp;
     console.log(word);
 }
 function getKey(input) {
