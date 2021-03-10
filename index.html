@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steganography</title>
+    <script src = "scripts/steganography.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="column stega">Stega</div>
+        <div class="column hub">Hub</div>
+    </div>
+    <div class="header2">
+        <a href="index.html"><button class="btnEncode">•Encode</button></a>
+        <a href="decode.html"><button class="btnDecode">Decode</button></a>
+    </div>
+
+    <div id="row">
+    <div class="column">
+    <div class="card">
+        <div>
+            <div class="tags">Source image:</div>
+            <img id = "img1" src="" >
+        </div >
+        <input class="src" type="file" name="img" id="file" accept="image/*" onchange="getImg(this)">
+        <div>
+            <div id = "mess">
+                 Enter Message: <textarea type="text" id="word" onchange="getWord(this)" placeholder="enter message"></textarea>
+            </div>
+             <div id="pass">
+                Enter Password: <input id="key" onchange="getKey(this)" placeholder="enter password" type="password">
+            </div>
+        </div>
+        <div class="btn">
+            <button class="btnStyle" onclick="hideText()">Encode</button>
+          </div>
+    </div>
+    </div>
+    <div class="column">
+    <div class="card card-2">
+         <div class="tags">Encoded image:</div>
+        <img id = "img2" src="" >  
+     <div>
+        <div class="btn dl">
+            <a  id ="download" download="download.png" rel="nofollow"><button class="btnStyle" onclick="download()">Download</button></a>
+        </div>
+        <div class="btn rl">
+            <button id = "reload" class="btnStyle" onclick="reload()">Clear Data</button>
+        </div>
+    </div>
+    </div> 
+    </div>
+</div>
+    <footer>
+        Steganography Project
+    </footer>
+    <script src = "scripts/index.js"></script>
+</body>
+</html>

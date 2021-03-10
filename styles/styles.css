@@ -1,0 +1,157 @@
+html{
+    height: 100%;
+    color: whitesmoke;
+}
+body{
+    font-family: sans-serif;
+    background-color: #333333;;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    font-size: 40px;
+    font-weight: bold;
+    padding:20px;
+}
+.header2
+{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    padding:20px;
+    margin-bottom:-20px;
+}
+.stega
+{
+    background-color: black;
+    color: whitesmoke;
+    padding:10px;
+    border-radius: 2px;
+}
+.hub
+{
+    background-color:#03C04A;
+    color: black;
+    padding:10px;
+    border-radius: 2px;
+}
+img{
+    height: 300px;
+    width: 400px;
+    border:solid black 3px;
+    border-radius: 3px;
+    background-color: whitesmoke;
+    outline: none;
+}
+.tags{
+    color: whitesmoke;
+}
+#file{
+    color: whitesmoke;
+}
+.card{
+    border: 2px solid whitesmoke;
+    padding: 40px;
+    padding-bottom: 60px;
+    margin:20px;
+    width: 410px;
+    height:520px;
+    border-radius: 5px;
+}
+#pass{
+    margin: 10px;
+    color: whitesmoke;
+}
+#mess{
+    margin: 10px;
+    color: whitesmoke;
+}
+#word{
+    width: 380px;
+    height: 50px;
+    
+}
+#key{
+    height: 30px;
+    width: 380px;
+}
+.src{
+    margin-top: 10px;
+}
+.btn
+{
+    margin: 10px;
+    margin-bottom: 20px;
+    margin-left: 2%;
+}
+.dl{
+    margin-top: 50px;
+}
+.rl{
+    margin-top: 40px;
+}
+.btnStyle{
+    width: 390px;
+    height: 40px;
+    border:none;
+    border-radius: 5px;
+    outline:none;
+    font-weight: bold;
+}
+button{
+    background-color:#03C04A;
+    cursor: pointer;
+    border: none;
+    outline:none;
+}
+button:hover{
+    background-color:#50C878;
+}
+button:active{
+    border:none;
+    background-color: yellowgreen;
+}
+#row
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.colum{
+    margin-left: 20px;
+}
+#messageArea{
+    display: none;
+}
+#text{
+    height: 100px;
+    width: 400px;
+    border-radius: 3px;
+}
+
+.dc{
+    height:670px;
+}
+.btnEncode{
+    padding: 10px;
+    color: whitesmoke;
+    border-radius: 3px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+.btnDecode{
+    padding: 10px;
+    color: whitesmoke;
+    border-radius: 3px;
+    font-weight: bold;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #03C04A;
+    height: 100%;
+    font-size: 15px;
+    padding:20px;
+    margin-top: 20px;
+}

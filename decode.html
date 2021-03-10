@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src = "scripts/steganography.js"></script>
+    <title>Steganography</title>
+</head>
+<body>
+    <header class="header">
+        <div class="column stega">Stega</div>
+        <div class="column hub">Hub</div>
+    </header>
+    <div class="header2">
+        <a href="index.html"><button class="btnEncode">Encode</button></a>
+        <a href="decode.html"><button class="btnDecode">•Decode</button></a>
+    </div>
+    <div id="row">
+    <div class="column">
+    <div class="card dc">
+    <div id="original" class="half">
+        <div id="stego" class="half">
+            Encoded Image:
+            <img id="img" src=" "/>
+        </div>
+    </div>
+    <div>
+        <input id="file" type="file">
+        <div id="pass">
+            Enter Password <input id="key" type="password" placeholder="enter passsword" />
+        </div>
+        <div class="btn rd ">
+            <button id="read" class="btnStyle">Read</button>
+        </div>
+    </div>
+<div id="right">
+    
+    <div id="messageArea" class="invisible">
+        <div id="message"></div>
+    </div>
+</div>
+<div>Message:</div>
+<textarea readonly id="text"></textarea>
+<div class="btn rl">
+    <button id="reload" class="btnStyle">Clear Data</button>
+</div>
+</div>
+</div>
+</div>
+<footer>
+    Steganography Project
+</footer>
+<script src = "scripts/decode.js"></script>
+</body>
+</html>
