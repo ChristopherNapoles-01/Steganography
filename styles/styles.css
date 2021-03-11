@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 html{
     height: 100%;
     color: whitesmoke;
@@ -61,6 +66,7 @@ img{
     border-radius: 5px;
 }
 #pass{
+    
     margin: 10px;
     color: whitesmoke;
 }
@@ -69,11 +75,13 @@ img{
     color: whitesmoke;
 }
 #word{
+    padding: 3px;
     width: 380px;
     height: 50px;
     
 }
 #key{
+    padding: 3px;
     height: 30px;
     width: 380px;
 }
@@ -159,6 +167,4 @@ footer{
     font-size: 15px;
     padding:20px;
     margin-top: 20px;
-    margin-left: -8px;
-    margin-right: -8px;
 }
